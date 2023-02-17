@@ -22,7 +22,7 @@ class TestGame(unittest.TestCase):
         game.secret_x = 1
         game.secret_y = 1
 
-        with patch('builtins.input', side_effect=['2', '2', '3', '3', '4', '4', '2', '1', '1', '2', '2', '3', '1', '3', '3', '1','4', '1']):
+        with patch('builtins.input', side_effect=['2', '2', '3', '3', '4', '4', '2', '1', '1', '2', '2', '3', '1', '3', '3', '1', '4', '1']):
             # Act
             game.play()
 
